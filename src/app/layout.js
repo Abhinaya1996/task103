@@ -10,6 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+      <link rel="preload" fetchPriority="high" as="image" href="/assets/f2-2.webp" type="image/webp" />
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" as="style" />
+      </head>
       <body>{children}</body>
     </html>
   );
