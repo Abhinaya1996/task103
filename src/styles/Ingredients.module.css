@@ -1,0 +1,140 @@
+.ingredientswrapper{
+    max-width: 1300px; 
+      margin: 0 auto; 
+      padding: 0 20px; 
+  }
+  
+  .row {
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 auto;
+  }
+  
+  .column {
+    flex: 3 1 0%; 
+    box-sizing: border-box;
+  }
+  
+  .subTitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #103f4e;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 2;
+    color: #103f4e;
+  }
+  
+  .imageWrapper {
+    height: 260px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    align-items: flex-end;
+  }
+  
+  .imageWrapper2 {
+    height: 260px;
+    width: 95%;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    align-items: flex-end;
+  }
+  
+  .overlay {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space between title/desc and link */
+    height: 100%;
+    padding: 20px 30px; /* Adjust padding as needed */
+    color: white; /* Text color */
+    box-sizing: border-box;
+  }
+  
+  .imageTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #103f4e;
+  }
+  
+  .imageDesc {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    color : #103f4e;
+  }
+  
+  .viewMore {
+    font-size: 14px;
+    color: #103f4e;
+    text-decoration: underline;
+    text-align: left;
+    font-weight: bold;
+    margin-top: auto;
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    padding: 0; /* Remove default button padding */
+    cursor: pointer; /* Add pointer cursor for interactivity */
+  }
+  
+  .mobhideCol{
+    display: block;
+  }
+  
+  .viewMore:hover {
+    text-decoration: underline;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .column {
+      flex: 1 1 100%; /* Makes the column take full width */
+      box-sizing: border-box; /* Ensures padding/border don't affect width */
+    }
+  
+    .ingredientswrapper{
+      max-width: 100%; 
+        margin: 0 auto; 
+        padding: 0 0px; 
+    }
+  
+    .mobhideCol{
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .column {
+      flex: 1 1 100%; /* Makes the column take full width */
+      box-sizing: border-box; /* Ensures padding/border don't affect width */
+    }
+  
+    .ingredientswrapper{
+      max-width: 100%; 
+        margin: 0 auto; 
+        padding: 0 0px; 
+    }
+  
+    .mobhideCol{
+      display: none;
+    }
+  }

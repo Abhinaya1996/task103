@@ -1,0 +1,86 @@
+.footersection{
+    width: 100%;
+    background-color: #103f4e; 
+    padding: 20px 0;
+}
+
+.footerwrapper{
+    max-width: 1150px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; 
+    margin: 0 auto; 
+    padding: 10px;
+  }
+  
+  .column {
+    flex: 1 1 calc(30% - 28px);
+    padding: 10px;
+    align-content: center;
+    box-sizing: border-box;
+    background-color: #28687d;
+    border-radius: 12px;
+  }
+
+  .columnplain{
+    flex: 1 1 calc(30% - 28px);
+    padding: 10px;
+    align-content: center;
+    box-sizing: border-box;
+    border-radius: 12px;
+  }
+
+  .iconTextContainer {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    gap: 10px; /* Adds space between icon and text */
+}
+
+.circleIcon {
+    background-color: #28687d; /* Example background */
+    padding: 10px;
+    border-radius: 50%; /* Makes the icon circular */
+}
+
+.listItemText {
+    color: white;
+    margin:0px;
+}
+
+.listItemText span{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px;
+    padding-bottom: 8px;
+}
+
+.listItemText p{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px;
+    padding: 15px 0px;
+}
+
+@media (max-width: 768px) {
+    .column, .columnplain {
+        flex: 1 1 100%; 
+      }
+      .row {
+        gap:10px;
+      }
+}
+
+@media (max-width: 480px) {
+    .column, .columnplain {
+        flex: 1 1 100%; 
+    }
+
+    .row {
+        gap:10px;
+      }
+}

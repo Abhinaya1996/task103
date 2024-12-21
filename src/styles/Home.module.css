@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+.bannerSection {
+    position: relative;
+    width: 100%;
+    background-color: #e3f5fb; 
+    padding: 20px 0;
+    padding-bottom: 250px;
+}
+
+.contentWrapper {
+    max-width: 1300px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.overlappingSection {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 2;
+    margin-top: -100px;
+    background-color: #103f4e;
+    border-radius: 50px 50px 0px 0px;
+    padding: 40px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; 
+}
+
+.overlappingSection2{
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto !important;
+    margin-top: -20px !important;
+    padding: 0 20px;
+    z-index: 2;
+    margin-top: -100px;
+    background-color: #103f4e;
+    border-radius: 0px 0px 50px 50px;
+    padding: 40px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; 
+}
+
+.circleWrapper {
+    position: relative;
+    margin-top: -45px;
+    text-align: center;
+    flex: 1; /* Make each circle take equal width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circleWrapper2 {
+    position: relative;
+    margin-top: 45px;
+    text-align: center;
+    flex: 1; /* Make each circle take equal width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #103f4e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -40px; /* Moves the circle half outside */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.circleText {
+    position: relative;
+    z-index: 2;
+    margin-top: 60px;
+}
+
+.circleText h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.circleText p {
+    font-size: 14px;
+    color: #fff;
+}
+
+
+
+
+.bannerTitle{
+    color: #003269;
+    font-size:100px;
+    font-weight:700;
+    text-align: center;
+    padding: 50px 0px;
+    margin:0px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; 
+    margin: 0 auto; 
+    padding: 16px;
+  }
+  
+  .column {
+    flex: 1 1 calc(30% - 28px);
+    padding: 20px;
+    align-content: center;
+    box-sizing: border-box;
+  }
+
+.plineThin{
+    padding-top: 30px;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 200;
+    color:#767878;
+}
+
+.plineMedium{
+    text-align: left;
+    font-size: 36px;
+    font-weight: 400;
+    color:#103f4e;
+}
+
+.button {
+    background-color: #103f4e;
+    max-width: 30%;
+    color: white;
+    padding: 20px 20px;
+    font-size: 17px;
+    text-align: center;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+.listItem {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.circleIcon {
+    background-color: #103f4e; 
+    padding: 18px; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 15px; 
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    max-width: 578px; /* Match the image's intrinsic width */
+    height: auto; 
+    aspect-ratio: 578 / 584;
+  }
+  .imageContainer img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+.listService{
+    padding-top: 20px;
+}
+
+.listItemText {
+    display: block; 
+    max-width: 300px; 
+    text-align: left;
+}
+
+.listItemText h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.listItemText p {
+    margin: 5px 0 0; 
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+  @media (max-width: 768px) {
+    .bannerSection{
+        padding-bottom: 80px;
+    }
+    .bannerTitle{
+        font-size:70px;
+        padding: 20px 0px;
+    }
+
+    .plineThin{
+        padding-top: 5px;
+        margin: 5px 0px;
+        text-align: center;
+    }
+
+    .plineMedium{
+        padding: 0px;
+        margin: 15px 0px;
+        text-align: center;
+    }
+
+    .button {
+        margin-left: 25%;
+      }
+    .listService{
+        padding: 20px 0px;
+    }
+
+    .column {
+        flex: 1 1 100%; 
+      }
+    .overlappingSection{
+        flex-direction: column;
+    }
+    .circle {
+        top: -10px;
+    }
+    .circleWrapper{
+        margin: 6px 0px;
+    }
+
+    .overlappingSection2{
+        flex-direction: column;
+    }
+    .circleWrapper2{
+        margin: 6px 0px;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .column {
+      flex: 1 1 100%; 
+      padding: 10px 10px;
+    }
+
+    .bannerTitle{
+        font-size:55px;
+        padding: 20px 0px;
+    }
+
+    .plineThin{
+        padding-top: 5px;
+        margin: 15px 0px 20px 0px;
+        text-align: center;
+    }
+
+    .plineMedium{
+        padding: 0px;
+        margin: 15px 0px 25px 0px;
+        text-align: center;
+    }
+
+    .button {
+        margin-left: 25%;
+      }
+    .listService{
+        padding: 20px 0px;
+    }
+
+  }
+  
+  

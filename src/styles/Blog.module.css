@@ -1,0 +1,103 @@
+
+.blogsection{
+    max-width: 1400px;
+    margin: 0 auto; 
+    padding: 0 20px; 
+  }
+  
+  .blogsection p{
+    font-size:14px;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  .blogsection H2{
+    font-size:44px;
+    margin: 5px 0px;
+    text-align: center;
+  }
+  
+  .blogs {
+      display: flex; 
+      gap: 16px; 
+      padding: 20px;
+    }
+    
+    .blogsColumn {
+      display: flex;
+      flex-direction: column; 
+      gap: 16px;
+      flex: 1;
+    }
+    
+    .blogsColumn img {
+      width: 100%;
+      object-fit: cover; 
+      border-radius: 8px; 
+    }
+    
+     .long {
+      height: 400px; 
+      object-position: top;
+    }
+    
+     .short {
+      height: 250px; 
+    }
+  
+    .imageWrapper {
+      position: relative;
+    }
+    
+    .imageWrapper img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  
+    .ribbon {
+      position: absolute;
+      top: 15px;
+      left: -8px; 
+      background-color: #003269;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 0px 10px 10px 0px;
+    }
+  
+    .ribbon p {
+      margin: 0; 
+      white-space: nowrap; 
+    }
+  
+    .imageTitle {
+      position: absolute;
+      top: 55px; /* Adjust to control vertical position inside the image */
+      left: 23px; /* Adjust to control horizontal position inside the image */
+      text-align: left;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      z-index: 2;
+      width: calc(100% - 30px); /* Ensures the title fits within the image */
+      padding: 5px;
+      border-radius: 5px; /* Optional: Rounds the corners of the title background */
+    }
+  
+    
+    @media (max-width: 768px) {
+      .blogs {
+        flex-direction: column; 
+        gap: 20px;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .blogs {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
